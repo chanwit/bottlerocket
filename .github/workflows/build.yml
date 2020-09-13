@@ -1,7 +1,7 @@
 name: Build
 on:
-  pull_request:
-    branches: [develop]
+  push:
+    branches: [develop, 1.0.x]
 jobs:
   build:
     runs-on: [self-hosted, linux, x64]
